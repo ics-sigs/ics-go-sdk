@@ -7,9 +7,9 @@ import (
 	"crypto/x509"
 	"encoding/base64"
 	"fmt"
-	"github.com/inspur-ics/ics-go-sdk/client/methods"
-	"github.com/inspur-ics/ics-go-sdk/client/types"
-	"github.com/inspur-ics/ics-go-sdk/client"
+	"github.com/ics-sigs/ics-go-sdk/client/methods"
+	"github.com/ics-sigs/ics-go-sdk/client/types"
+	"github.com/ics-sigs/ics-go-sdk/client"
 )
 
 func (volume *VolumeService) CreateVolume(ctx context.Context, volumereq types.VolumeReq) (types.Task, error) {

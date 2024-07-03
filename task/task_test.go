@@ -3,8 +3,8 @@ package task
 import (
 	"context"
 	"encoding/json"
-	icsgo "github.com/inspur-ics/ics-go-sdk"
-	icsvm "github.com/inspur-ics/ics-go-sdk/vm"
+	icsgo "github.com/ics-sigs/ics-go-sdk"
+	icsvm "github.com/ics-sigs/ics-go-sdk/vm"
 	"testing"
 )
 

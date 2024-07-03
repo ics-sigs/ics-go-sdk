@@ -4,9 +4,9 @@ import (
 	"context"
 	"net/url"
 
-	"github.com/inspur-ics/ics-go-sdk/client"
-	"github.com/inspur-ics/ics-go-sdk/client/methods"
-	"github.com/inspur-ics/ics-go-sdk/client/types"
+	"github.com/ics-sigs/ics-go-sdk/client"
+	"github.com/ics-sigs/ics-go-sdk/client/methods"
+	"github.com/ics-sigs/ics-go-sdk/client/types"
 )
 
 var (

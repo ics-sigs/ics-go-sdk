@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	icsgo "github.com/inspur-ics/ics-go-sdk"
+	icsgo "github.com/ics-sigs/ics-go-sdk"
 	"testing"
 )
 

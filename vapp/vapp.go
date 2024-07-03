@@ -3,9 +3,9 @@ package vapp
 import (
 	"context"
 	"fmt"
-	"github.com/inspur-ics/ics-go-sdk/client"
-	"github.com/inspur-ics/ics-go-sdk/client/methods"
-	"github.com/inspur-ics/ics-go-sdk/client/types"
+	"github.com/ics-sigs/ics-go-sdk/client"
+	"github.com/ics-sigs/ics-go-sdk/client/methods"
+	"github.com/ics-sigs/ics-go-sdk/client/types"
 )
 
 func (v *VappService) GetVappList(ctx context.Context) ([]types.Vapp, error) {

@@ -1,8 +1,8 @@
 package tag
 
 import (
-    "github.com/inspur-ics/ics-go-sdk/client"
-    "github.com/inspur-ics/ics-go-sdk/common"
+    "github.com/ics-sigs/ics-go-sdk/client"
+    "github.com/ics-sigs/ics-go-sdk/common"
 )
 
 type TagsService struct {

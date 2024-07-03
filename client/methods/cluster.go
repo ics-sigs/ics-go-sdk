@@ -3,8 +3,8 @@ package methods
 import (
 	"context"
 	"encoding/json"
-	"github.com/inspur-ics/ics-go-sdk/client/restful"
-	"github.com/inspur-ics/ics-go-sdk/client/types"
+	"github.com/ics-sigs/ics-go-sdk/client/restful"
+	"github.com/ics-sigs/ics-go-sdk/client/types"
 )
 
 func GetClusterList(ctx context.Context, r restful.RestAPITripper) ([]types.Cluster, error) {

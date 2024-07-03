@@ -2,8 +2,8 @@ package datacenter
 
 import (
 	"context"
-	"github.com/inspur-ics/ics-go-sdk/client/methods"
-	"github.com/inspur-ics/ics-go-sdk/client/types"
+	"github.com/ics-sigs/ics-go-sdk/client/methods"
+	"github.com/ics-sigs/ics-go-sdk/client/types"
 )
 
 func (d *DatacenterService) GetDatacenter(ctx context.Context, datacenterid string) (*types.Datacenter, error) {

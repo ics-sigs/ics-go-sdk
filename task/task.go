@@ -2,8 +2,8 @@ package task
 
 import (
 	"context"
-	"github.com/inspur-ics/ics-go-sdk/client/methods"
-	"github.com/inspur-ics/ics-go-sdk/client/types"
+	"github.com/ics-sigs/ics-go-sdk/client/methods"
+	"github.com/ics-sigs/ics-go-sdk/client/types"
 	"sync"
 	"time"
 )

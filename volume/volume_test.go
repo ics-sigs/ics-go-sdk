@@ -4,8 +4,8 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	icsgo "github.com/inspur-ics/ics-go-sdk"
-	"github.com/inspur-ics/ics-go-sdk/client/types"
+	icsgo "github.com/ics-sigs/ics-go-sdk"
+	"github.com/ics-sigs/ics-go-sdk/client/types"
 	"testing"
 )
 

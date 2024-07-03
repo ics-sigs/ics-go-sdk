@@ -4,8 +4,8 @@ import (
     "context"
     "time"
 
-    "github.com/inspur-ics/ics-go-sdk/client/restful"
-    "github.com/inspur-ics/ics-go-sdk/client/types"
+    "github.com/ics-sigs/ics-go-sdk/client/restful"
+    "github.com/ics-sigs/ics-go-sdk/client/types"
 )
 
 var serviceInstance = types.ManagedObjectReference{

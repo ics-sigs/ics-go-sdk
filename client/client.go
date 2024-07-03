@@ -3,8 +3,8 @@ package client
 import (
     "context"
     "encoding/json"
-    "github.com/inspur-ics/ics-go-sdk/client/methods"
-    "github.com/inspur-ics/ics-go-sdk/client/restful"
+    "github.com/ics-sigs/ics-go-sdk/client/methods"
+    "github.com/ics-sigs/ics-go-sdk/client/restful"
 )
 
 const (

@@ -4,8 +4,8 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/inspur-ics/ics-go-sdk/client/restful"
-	"github.com/inspur-ics/ics-go-sdk/client/types"
+	"github.com/ics-sigs/ics-go-sdk/client/restful"
+	"github.com/ics-sigs/ics-go-sdk/client/types"
 )
 
 func GetStoragePageList(ctx context.Context, r restful.RestAPITripper, req *types.StoragePageReq) (*types.StoragePageResponse, error) {

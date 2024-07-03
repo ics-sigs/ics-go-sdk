@@ -11,7 +11,7 @@ import (
     "sync"
     "time"
 
-    "github.com/inspur-ics/ics-go-sdk/client/types"
+    "github.com/ics-sigs/ics-go-sdk/client/types"
     "github.com/go-resty/resty/v2"
     "k8s.io/klog"
 )

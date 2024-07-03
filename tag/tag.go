@@ -2,9 +2,9 @@ package tag
 
 import (
     "context"
-    "github.com/inspur-ics/ics-go-sdk/client/methods"
+    "github.com/ics-sigs/ics-go-sdk/client/methods"
 
-    "github.com/inspur-ics/ics-go-sdk/client/types"
+    "github.com/ics-sigs/ics-go-sdk/client/types"
 )
 
 // ListAttachedTags fetches the array of tag IDs attached to the given object.

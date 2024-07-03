@@ -2,9 +2,9 @@ package icsgo
 
 import (
 	"context"
-	"github.com/inspur-ics/ics-go-sdk/client"
-	"github.com/inspur-ics/ics-go-sdk/client/restful"
-	"github.com/inspur-ics/ics-go-sdk/session"
+	"github.com/ics-sigs/ics-go-sdk/client"
+	"github.com/ics-sigs/ics-go-sdk/client/restful"
+	"github.com/ics-sigs/ics-go-sdk/session"
 	"k8s.io/klog"
 	"net"
 	"net/url"

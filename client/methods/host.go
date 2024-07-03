@@ -4,8 +4,8 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/inspur-ics/ics-go-sdk/client/restful"
-	"github.com/inspur-ics/ics-go-sdk/client/types"
+	"github.com/ics-sigs/ics-go-sdk/client/restful"
+	"github.com/ics-sigs/ics-go-sdk/client/types"
 )
 
 func GetHostById(ctx context.Context, r restful.RestAPITripper, hostUUID string) (*types.Host, error) {

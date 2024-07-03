@@ -4,8 +4,8 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/inspur-ics/ics-go-sdk/client/restful"
-	"github.com/inspur-ics/ics-go-sdk/client/types"
+	"github.com/ics-sigs/ics-go-sdk/client/restful"
+	"github.com/ics-sigs/ics-go-sdk/client/types"
 )
 
 func CreateVolume(ctx context.Context, r restful.RestAPITripper, volume types.VolumeReq) (types.Task, error) {

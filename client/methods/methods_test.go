@@ -3,8 +3,8 @@ package methods
 import (
 	"context"
 	"fmt"
-	"github.com/inspur-ics/ics-go-sdk/client/restful"
-	"github.com/inspur-ics/ics-go-sdk/client/types"
+	"github.com/ics-sigs/ics-go-sdk/client/restful"
+	"github.com/ics-sigs/ics-go-sdk/client/types"
 	"testing"
 )
 

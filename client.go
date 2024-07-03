@@ -4,9 +4,9 @@ import (
     "context"
     "net/url"
 
-    "github.com/inspur-ics/ics-go-sdk/client"
-    "github.com/inspur-ics/ics-go-sdk/client/restful"
-    "github.com/inspur-ics/ics-go-sdk/session"
+    "github.com/ics-sigs/ics-go-sdk/client"
+    "github.com/ics-sigs/ics-go-sdk/client/restful"
+    "github.com/ics-sigs/ics-go-sdk/session"
 )
 
 type Client struct {

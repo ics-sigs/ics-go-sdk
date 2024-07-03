@@ -4,8 +4,8 @@ import (
     "context"
     "encoding/json"
     "fmt"
-    "github.com/inspur-ics/ics-go-sdk/client/restful"
-    "github.com/inspur-ics/ics-go-sdk/client/types"
+    "github.com/ics-sigs/ics-go-sdk/client/restful"
+    "github.com/ics-sigs/ics-go-sdk/client/types"
 )
 
 func GetTagById(ctx context.Context, r restful.RestAPITripper, id string) (*types.Tag, error) {
