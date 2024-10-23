@@ -20,15 +20,15 @@ func init() {
 }
 
 func JsonError(err error) error {
-    //var code, msg    string
-    //if err != nil {
-    //    code = "400"
-    //    msg = "SDK unmarshal data error"
-    //    err = &types.SDKError{
-    //        Code: code,
-    //        Message: msg,
-    //    }
-    //}
+    var code, msg    string
+    if err != nil {
+        code = "400"
+        msg = "SDK unmarshal data error: " +  err.Error()
+        err = &types.SDKError{
+            Code: code,
+            Message: msg,
+        }
+    }
     return err
 }
 

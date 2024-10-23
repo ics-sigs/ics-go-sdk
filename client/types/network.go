@@ -92,7 +92,7 @@ type Network struct {
 	DNS             string        `json:"dns"`
 	DataCenterDto   interface{}   `json:"dataCenterDto"`
 	NetworkTopoly   bool          `json:"networkTopoly"`
-	UseTypes        string        `json:"useTypes"`
+	UseTypes        interface{}   `json:"useTypes"`
 	StartIp         string        `json:"startIp"`
 	EndIp           string        `json:"endIp"`
 	Pools           []interface{} `json:"pools"`
