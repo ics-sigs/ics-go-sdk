@@ -90,7 +90,7 @@ type Network struct {
 	DhcpEnabled     bool          `json:"dhcpEnabled"`
 	GatewayEnabled  bool          `json:"gatewayEnabled"`
 	DNS             string        `json:"dns"`
-	DataCenterDto   Datacenter    `json:"dataCenterDto"`
+	DataCenterDto   interface{}   `json:"dataCenterDto"`
 	NetworkTopoly   bool          `json:"networkTopoly"`
 	UseTypes        string        `json:"useTypes"`
 	StartIp         string        `json:"startIp"`
