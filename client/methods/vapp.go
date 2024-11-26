@@ -12,7 +12,7 @@ func GetVappList(ctx context.Context, r restful.RestAPITripper) ([]types.Vapp, e
 	var api types.ICSApi
 	var response = types.VappListRsp{}
 	var reqBody *types.Common
-	api.Api = "/vclusters/"
+	api.Api = "/vclusters"
 	api.Token = true
 	resp, err := r.GetTrip(ctx, api, reqBody)
 	respBody, err1 := HandleResponse(resp, err)

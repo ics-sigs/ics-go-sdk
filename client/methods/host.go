@@ -82,7 +82,7 @@ func GetHostList(ctx context.Context, r restful.RestAPITripper) (types.HostPageR
 	var api types.ICSApi
 	var response types.HostPageResponse
 
-	api.Api = "/hosts/"
+	api.Api = "/hosts"
 	api.Token = true
 
 	resp, err := r.GetTrip(ctx, api, reqBody)

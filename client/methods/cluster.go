@@ -11,7 +11,7 @@ func GetClusterList(ctx context.Context, r restful.RestAPITripper) ([]types.Clus
 	var api          types.ICSApi
 	var response = types.ClusterListRsp{}
 	var reqBody      *types.Common
-	api.Api = "/clusters/"
+	api.Api = "/clusters"
 	api.Token = true
 	resp, err := r.GetTrip(ctx, api, reqBody)
 	respBody, err1 := HandleResponse(resp, err)

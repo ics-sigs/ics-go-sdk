@@ -12,7 +12,7 @@ func GetStoragePageList(ctx context.Context, r restful.RestAPITripper, req *type
 	var api types.ICSApi
 	var response = types.StoragePageResponse{}
 
-	api.Api = "/storages/"
+	api.Api = "/storages"
 	api.Token = true
 
 	resp, err := r.GetTrip(ctx, api, req)
@@ -54,7 +54,7 @@ func GetStorageList(ctx context.Context, r restful.RestAPITripper) (*types.Stora
 	var api types.ICSApi
 	var response = types.StoragePageResponse{}
 
-	api.Api = "/storages/"
+	api.Api = "/storages"
 	api.Token = true
 
 	resp, err := r.GetTrip(ctx, api, reqBody)

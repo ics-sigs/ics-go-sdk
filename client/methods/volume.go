@@ -97,7 +97,7 @@ func GetVolumesInDatastore(ctx context.Context, r restful.RestAPITripper, datast
 	if len(datastoreId) <= 0 {
 		datastoreId = "anonymous"
 	}
-	api.Api = fmt.Sprintf("storages/%s/volumes", datastoreId)
+	api.Api = fmt.Sprintf("/storages/%s/volumes", datastoreId)
 	api.Token = true
 
 	resp, err := r.GetTrip(ctx, api, reqBody)

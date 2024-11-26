@@ -224,7 +224,7 @@ func GetVMList(ctx context.Context, r restful.RestAPITripper) (*types.VMPageResp
 	var api types.ICSApi
 	var response = types.VMPageResponse{}
 
-	api.Api = "/vms/"
+	api.Api = "/vms"
 	api.Token = true
 
 	resp, err := r.GetTrip(ctx, api, reqBody)
