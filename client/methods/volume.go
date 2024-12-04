@@ -33,7 +33,7 @@ func DeleteVolume(ctx context.Context, r restful.RestAPITripper, volumeId string
 	var api types.ICSApi
 	var response = types.Task{}
 
-	api.Api = fmt.Sprintf("volumes/%s/?removeData=%v", volumeId, deleteVolume)
+	api.Api = fmt.Sprintf("/volumes/%s?removeData=%v", volumeId, deleteVolume)
 	api.Token = true
 
 	resp, err := r.DeleteTrip(ctx, api, reqBody)
