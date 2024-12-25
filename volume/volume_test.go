@@ -21,8 +21,9 @@ func TestCreateVolume(t *testing.T) {
 		Password: "Cloud@s1",
 		//AccessKeyID:     "09cb1VN5xu5T7469d1Yo",
 		//AccessKeySecret: "6e4711WY1pY310qPG8ntv7RdIuM8vDO07XKM2GeX",
-		Hostname: "10.49.34.162",
+		Hostname: "10.68.22.57",
 		Port:     "443",
+		Locale:   "en",
 		Insecure: true,
 	}
 	ctx = context.Background()
@@ -31,13 +32,13 @@ func TestCreateVolume(t *testing.T) {
 		t.Fatal("Create ics connection error!")
 	}
 	createVolumeReq := types.VolumeReq{
-		Name: "vol_001",
+		Name: "vol_test001",
 		Size: "20",
 		//DataStoreId:   "8ab1a2968145ef35018145fc98ee0097", // 10.49.34.22
 		//DataStoreId:   "8ab0b34979c154880179c207ef05004d", // 10.49.34.23
 		//DataStoreId:   "8ab1a21f8e11b0f9018e11b4c19f0016", // 10.49.34.159
 		//DataStoreId:   "8ab1a2218d55e067018d55ec81d10042", // 10.49.34.161
-		DataStoreId:   "8ab1a2228e07312e018e0736db0e0016", // 10.49.34.162
+		DataStoreId:   "8ac496b993b4ea2e0193dc9eaafb5d07", // 10.49.34.162
 		DataStoreType: "LOCAL",
 		VolumePolicy:  "THIN",
 		Format:        "RAW",

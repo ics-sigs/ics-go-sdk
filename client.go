@@ -17,8 +17,8 @@ type Client struct {
 
 // NewClient creates a new client from a URL. The client authenticates with the
 // server with username/password before returning if the URL contains user information.
-func NewClient(ctx context.Context, u *url.URL, insecure bool) (*Client, error) {
-    restfulClient := restful.NewClient(u, insecure)
+func NewClient(ctx context.Context, u *url.URL, insecure bool, locale string) (*Client, error) {
+    restfulClient := restful.NewClient(u, insecure, locale)
     sdkClient, err := client.NewClient(ctx, restfulClient)
     if err != nil {
         return nil, err

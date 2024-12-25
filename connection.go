@@ -17,6 +17,7 @@ type ICSConnection struct {
 	Password        string
 	Hostname        string
 	Port            string
+	Locale          string
 	AccessKeyID     string
 	AccessKeySecret string
 	Insecure        bool
@@ -93,7 +94,7 @@ func (connection *ICSConnection) NewClient(ctx context.Context) (*client.Client,
 		return nil, err
 	}
 
-	sc := restful.NewClient(url, connection.Insecure)
+	sc := restful.NewClient(url, connection.Insecure, connection.Locale)
 
 	client, err := client.NewClient(ctx, sc)
 	if err != nil {

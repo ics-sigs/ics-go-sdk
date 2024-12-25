@@ -86,7 +86,7 @@ func ParseURI(url *url.URL, uri string) string {
     return apiPath
 }
 
-func NewClient(u *url.URL, insecure bool) *Client {
+func NewClient(u *url.URL, insecure bool, locale string) *Client {
     c := Client{
         u: u,
         k: insecure,
@@ -96,7 +96,8 @@ func NewClient(u *url.URL, insecure bool) *Client {
 
     c.HttpClient.SetHeader("Content-Type", "application/json; charset=utf-8").
         SetHeader("Accept", "application/json; charset=utf-8").
-        SetHeader("version", "5.8")
+        SetHeader("version", "5.8").
+        SetHeader("Accept-Language", locale)
 
     c.HttpClient.SetTLSClientConfig(&tls.Config{ InsecureSkipVerify: insecure })
 
