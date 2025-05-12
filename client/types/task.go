@@ -14,6 +14,7 @@ type TaskInfo struct {
     EndTime       string           `json:"endTime"`
     ActorName     string           `json:"actorName"`
     Error         string           `json:"error"`
+    ErrorCode     string           `json:"errorCode"`
     Cancelable    bool             `json:"cancelable"`
     Canceled      bool             `json:"canceled"`
     TargetName    string           `json:"targetName"`
