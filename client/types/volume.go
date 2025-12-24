@@ -49,6 +49,13 @@ type Volume struct {
 	DatastoreStrategy   interface{}     `json:"datastoreStrategy"`
 	Replicate           int             `json:"replicate"`
 	WorkMode            interface{}     `json:"workMode"`
+	SerialNumber        string          `json:"serialNumber"`
+	AutoSerialNumber    bool            `json:"autoSerialNumber"`
+	ProtectType         string          `json:"protectType"`
+	CdpShareMemory      int             `json:"cdpShareMemory"`
+	HostIds             interface{}     `json:"hostIds"`
+	SnapShotCount       int             `json:"snapShotCount"`
+	Unmap               bool            `json:"unmap"`
 }
 
 type RelatedVmInfo struct {
