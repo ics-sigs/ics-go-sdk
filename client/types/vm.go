@@ -171,6 +171,10 @@ type GraphicsCard struct {
 	ScreenNumbers      int    `json:"screenNumbers"`
 }
 
+type SoundCard struct {
+	SoundCardModel string `json:"soundCardModel"`
+}
+
 type CdpInfo struct {
 	CdpBackupDatastoreId  string `json:"cdpBackupDatastoreId"`
 	BackupDataStoreName   string `json:"backupDataStoreName"`
@@ -281,6 +285,7 @@ type VirtualMachine struct {
 	GraphicsCardModel        string          `json:"graphicsCardModel"`
 	GraphicsCardMemory       int             `json:"graphicsCardMemory"`
 	GraphicsCards            []GraphicsCard  `json:"graphicsCards"`
+	SoundCards               []SoundCard     `json:"soundCards"`
 	VMHostName               string          `json:"vmHostName"`
 	DiskTotalSize            float64         `json:"diskTotalSize"`
 	DiskTotalSizeInByte      int             `json:"diskTotalSizeInByte"`
