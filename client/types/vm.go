@@ -344,6 +344,7 @@ type VirtualMachine struct {
 	DisplayNodeVersion       string          `json:"displayNodeVersion"`
 	VappId                   string          `json:"vappId"`
 	VmfpgaDevs               []interface{}   `json:"vmfpgaDevs"`
+	MachineType              string          `json:"machineType"`
 }
 
 type VMPageResponse struct {
